@@ -1,0 +1,71 @@
+.ToDoList{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    min-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    box-sizing: content-box;
+}
+
+  .TaskDescriptionContainer{
+    flex-grow: 2;
+    border: none;
+  }
+
+  .TaskDescriptionContainer > input[type="text"]{
+    outline: none; 
+    border: 1px solid #ccc;
+    width: 96%;
+    height: 90%;
+    border-radius: 7px;
+    box-shadow: 1px 2px 3px #ccc;
+    font-size: 1.1em;
+    color: #555;
+    padding-left: 5px;
+  }
+
+  .Action{
+      color: #2196F3;
+      font-size: 2.3em;
+      margin-right: 15px;
+      cursor: pointer;
+  }
+
+  .Action p{
+    text-shadow: 1px 1px #2196F3;
+    margin: 0px;
+  }
+
+  .Action p.Cancel{
+    color: red;
+    transform: rotate(45deg);
+  }
+
+  .Action p.isCompleted{
+    color: green;
+    padding-left: 5px;
+    /*transform: rotate(45deg);*/
+  }
+
+  .Action p.taskPending{
+    color: #2196F3;
+    text-shadow: 1px 1px #777;
+    padding-left: 5px;
+  }
+
+  .TextDescriptionArea{
+      outline: none;
+      border: none;
+      font-size: 1.1em;
+      color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 8px;
+      box-sizing: border-box;
+      margin: 5px 0px 0px 0px;
+  }
+
+  .TaskComplete{
+    text-decoration: line-through;
+    color: #666;
+  }
